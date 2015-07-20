@@ -10,14 +10,12 @@ class Solution:
             return []
         ans, tmp = [], []
         for i in range(0, k):
-            n = 0
             while tmp != [] and nums[i] > nums[tmp[-1]]:
                 tmp.pop()
                 n += 1
             tmp.append(i)
         for i in range(k, len(nums)):
             ans.append(nums[tmp[0]])
-            m = 0
             while tmp != [] and nums[i] > nums[tmp[-1]]:
                 m += 1
                 tmp.pop()

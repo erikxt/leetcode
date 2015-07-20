@@ -15,7 +15,6 @@ class Solution:
                 tmp.pop()
                 n += 1
             tmp.append(i)
-        print n
         for i in range(k, len(nums)):
             ans.append(nums[tmp[0]])
             m = 0
@@ -26,7 +25,6 @@ class Solution:
             while tmp != [] and tmp[0] <= i - k:
                 m += 1
                 tmp.pop(0)
-            print('m=%s') % m
         ans.append(nums[tmp[0]])
         return ans
 

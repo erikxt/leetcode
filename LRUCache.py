@@ -27,7 +27,8 @@ class LRUCache:
             del self.cache[lru]
         self.record.append(key)
         self.cache[key]=value
-            
+
+
 def main():
     s=LRUCache(10)
     s.set(10,13)
@@ -38,7 +39,7 @@ def main():
     s.get(13)
     s.set(2,19)
     s.get(2)
-    s.get(3)
+    print s.get(3)
         
     
 if __name__  == "__main__":

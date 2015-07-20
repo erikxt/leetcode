@@ -1,9 +1,12 @@
 # -*- coding: cp936 -*-
 # Definition for singly-linked list.
+
+
 class ListNode:
     def __init__(self, x):
         self.val = x
         self.next = None
+
 
 class Solution:
     # @param head, a ListNode
@@ -66,5 +69,3 @@ def main():
     
 if __name__ == "__main__":
     main()
-        
-        

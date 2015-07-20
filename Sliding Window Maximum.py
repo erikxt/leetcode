@@ -27,4 +27,6 @@ if __name__ == '__main__':
     nums = (1, 3, 1, 2, 0, 5)
     k = 3
     s = Solution()
+    print range(0, k)
+    print range(k, len(nums))
     print s.maxSlidingWindow(nums, k)
